@@ -8,20 +8,13 @@
   ],
   "heroes": [
     {
-      "id": "dc-batman",
-      "superhero": "Batman",
-      "publisher": "DC Comics",
-      "alter_ego": "Bruce Wayne",
-      "first_appearance": "Detective Comics #27",
-      "characters": "Bruce Wayne"
-    },
-    {
       "id": "dc-superman",
       "superhero": "Superman",
       "publisher": "DC Comics",
       "alter_ego": "Kal-El",
       "first_appearance": "Action Comics #1",
-      "characters": "Kal-El"
+      "characters": "Kal-El",
+      "alt_img": "https://content.eccediciones.com//contenido/cubierta_Superman_Arriba_en_el_cielo_2ed_WEB_1.jpg"
     },
     {
       "id": "dc-flash",
@@ -93,7 +86,8 @@
       "publisher": "Marvel Comics",
       "alter_ego": "Peter Parker",
       "first_appearance": "Amazing Fantasy #15",
-      "characters": "Peter Parker"
+      "characters": "Peter Parker",
+      "alt_img": "https://img2.wallspic.com/previews/7/6/6/4/7/174667/174667-millas_morales-maravillas_del_hombre_arana_millas_morales-maravillas_hombre_arana_2-peni_parker-spider_man-500x.jpg"
     },
     {
       "id": "marvel-captain",
