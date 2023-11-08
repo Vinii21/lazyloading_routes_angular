@@ -1,20 +1,22 @@
 import { inject } from '@angular/core';
 import { CanMatchFn, Route, Router, UrlSegment } from '@angular/router';
 import { AuthService } from '../services/auth.service';
-import { tap } from 'rxjs';
+import { map, tap } from 'rxjs';
 
 
 
-export const CanMatchGuard: CanMatchFn = (
+export const PublicCanMatchGuard: CanMatchFn = (
   route: Route,
   segments: UrlSegment[]
 ) => {
   const authService = inject(AuthService);
   const router = inject(Router);
   return authService.checkAuthentication().pipe(
-      tap(isAuthenticated => {
-        if(!isAuthenticated) router.navigate(["/auth/login"])
-      })
+      tap(isLogin=>console.log({isLogin})),
+      tap(isLogin => {
+        if(isLogin) router.navigate(["./"])
+      }),
+      map(isLogin => !isLogin)
     )
 }
 
